@@ -115,6 +115,7 @@ nav .menu a {
 .about-container-experience {
   max-width: 827px;
   text-align: center;
+  margin: auto;
 }
 .about-container-experience h2 {
   font-size: 35px;
@@ -128,7 +129,7 @@ nav .menu a {
 .about .about-container .about-container-info {
   display: flex;
   justify-content: space-around;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .about-container-info .info-card p {
@@ -282,7 +283,7 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
-  /* skills section responsive */
+  /* skills section responsive starts*/
   .skills {
     padding-top: 60px;
   }
@@ -306,5 +307,18 @@ textarea {
   }
   /* skills section ends */
 
-  /* about section responsive */
+  /* about section responsive starts*/
+  .about {
+    padding-top: 60px;
+  }
+  .about-container {
+    width: 95%;
+    padding: 10px;
+  }
+  .about .about-container .about-container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  /* about section responsive ends */
 }
