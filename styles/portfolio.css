@@ -8,12 +8,12 @@
 
 header {
   background-color: #fff8f3;
-  background: url("../images/developer.png"), url("../images/header_bg.png"),
+  background: url(../images/developer.png), url(../images/header_bg.png),
     #fff8f3;
-  background-position: top left, bottom right;
+  background-position: 23px 38px, bottom right;
   background-repeat: no-repeat;
   /*bg-size: width height, width height  */
-  background-size: 95px auto, auto;
+  background-size: 90px auto, auto;
 
   padding-top: 50px;
 }
@@ -46,6 +46,10 @@ nav .menu a {
   text-decoration: none;
   color: #474747;
 }
+.btn-group {
+  display: flex;
+  gap: 20px;
+}
 
 .btn {
   width: 200px;
@@ -69,10 +73,10 @@ nav .menu a {
   justify-content: space-between;
   align-items: center;
 }
-.banner-content {
+/* .banner-content {
   width: 800px;
   height: 356px;
-}
+} */
 
 .banner .banner-content h2 {
   font-size: 45px;
@@ -88,7 +92,7 @@ nav .menu a {
 }
 
 .banner .banner-content p {
-  font-size: 18;
+  font-size: 18px;
   color: #757575;
   margin-bottom: 30px;
   line-height: 1.5;
@@ -334,10 +338,18 @@ textarea {
     gap: 80px;
   }
   form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+  }
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    width: 100%;
+    padding: 0;
   }
   footer .footer-container .social {
     max-width: 100%;
@@ -350,6 +362,7 @@ textarea {
 
   /* footer section responsive ends */
 
+  /* resume section responsive starts */
   .resume {
     padding-top: 60px;
     width: 100%;
@@ -372,5 +385,41 @@ textarea {
   }
   .btn-resume {
     padding-top: 10px;
+  }
+  /* resume section responsive ends */
+
+  /* header section responsive starts */
+
+  nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .banner {
+    margin: 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .banner .banner-content h1 {
+    font-size: 30px;
+  }
+  .banner .banner-image img {
+    width: 100%;
+  }
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    background-color: #fff8f3;
+    background: url(../images/header_bg.png), #fff8f3;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    /* background-size: 95px auto, auto; */
+    padding-top: 20px;
   }
 }
