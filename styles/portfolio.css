@@ -321,4 +321,32 @@ textarea {
     gap: 40px;
   }
   /* about section responsive ends */
+
+  /* footer section responsive starts */
+
+  footer {
+    margin-top: 20px;
+    padding: 65px 0px;
+  }
+  footer .footer-container {
+    max-width: 100%;
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-container .social {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* footer section responsive ends */
 }
